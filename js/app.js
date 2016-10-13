@@ -4,8 +4,12 @@ var ApiKey = '575d6a8a0eda57506aefa0a327af4b19';
 $(document).ready(function() {
 
     var latitude, longitude, date;
+
     date = getFormattedDate();
-    getLocation(function(lat, lon) {
+
+    getLocation(getWeatherData);
+
+    function getWeatherData(lat, lon) {
         $.getJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&APPID=' + ApiKey, function(json) {
             // var data = JSON.stringify(json);
             console.log(json);
@@ -13,8 +17,8 @@ $(document).ready(function() {
             $('#location').html(json.name);
             $('#temp-value').html(json.main.temp);
         });
-    });
-
+ 
+    }
 
     function getFormattedDate() {
         var date = new Date();
