@@ -1,20 +1,66 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-  <title>Local Weather</title>
-  <!-- materialize stylesheet -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" type="text/css" />
-  <!-- main stylesheet -->
-  <link rel="stylesheet" href="css/master.css" type="text/css" />
-  
+    <title>Local Weather</title>
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- materialize stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css"
+        type="text/css" />
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="css/master.css" type="text/css" />
 </head>
-<body>
 
-  <!-- jquery script -->
-  <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-  <!-- materialize.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+<body class="amber lighten-5">
+    <div class="section">
+        <div class="col s2">
+
+        </div>
+    </div>
+    <div class="section grey-text text-darken-1">
+        <div class="container center">
+            <div class="container section">
+                <div class="card hoverable amber lighten-5 z-depth-1">
+                    <div class="card-content">
+                        <h1 class="card-title teal-text text-lighten-1">Local Weather</h1>
+                        <div class="header">
+                            <p class="location">Dubai, UAE</p>
+                            <p class="date">12 October 2016</p>
+                        </div>
+                        <div class="section container temperature">
+                            <h2 class="teal-text text-lighten-1">32<sup class="grey-text text-darken-1">°C</sup></h2>
+                        </div>
+                        <div class="section footer">
+                            <span class="activator"><i class="material-icons right">more_vert</i></span>
+                        </div>
+                    </div>
+                    <div class="card-reveal amber lighten-5 center">
+                        <span class="card-title">Temperature unit<span><i class="material-icons right">close</i></span></span>
+                        <form class="center section" action="#">
+                            <p class="center-align">
+                                <input type="radio" name="temp-form" id="celsius" />
+                                <label for="celsius">°C</label>
+                            </p>
+                            <p class="center-align">
+                                <input type="radio" name="temp-form" id="farenheit" />
+                                <label for="farenheit">°F</label>
+                            </p>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- jquery script -->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <!-- materialize.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 </body>
+
 </html>
