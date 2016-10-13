@@ -27,11 +27,11 @@
                     <div class="card-content">
                         <h1 class="card-title teal-text text-lighten-1">Local Weather</h1>
                         <div class="header">
-                            <p class="location">Dubai, UAE</p>
-                            <p class="date">12 October 2016</p>
+                            <p id="location"></p>
+                            <p id="date"></p>
                         </div>
                         <div class="section container temperature">
-                            <h2 class="teal-text text-lighten-1">32<sup class="grey-text text-darken-1">°C</sup></h2>
+                            <h3 class="teal-text text-lighten-1"><span id="temp-value"></span><sup class="grey-text text-darken-1" id="temp-unit">°C</sup></h3>
                         </div>
                         <div class="section footer">
                             <span class="activator"><i class="material-icons right">more_vert</i></span>
@@ -61,6 +61,7 @@
         crossorigin="anonymous"></script>
     <!-- materialize.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
