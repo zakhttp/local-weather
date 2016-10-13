@@ -11,11 +11,10 @@ $(document).ready(function() {
             console.log(json);
             $('#date').html(date);
             $('#location').html(json.name);
-            $('#temp-value').html(farenheitToCelsius(json.main.temp));
+            $('#temp-value').html(json.main.temp);
         });
     });
 
-   
 
     function getFormattedDate() {
         var date = new Date();
