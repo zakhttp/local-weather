@@ -31,7 +31,7 @@
                             <p id="date"></p>
                         </div>
                         <div class="section container temperature">
-                            <h3 class="teal-text text-lighten-1"><span id="temp-value"></span><sup class="grey-text text-darken-1" id="temp-unit">°C</sup></h3>
+                            <h3 class="teal-text text-lighten-1"><span id="temp-value"></span><sup class="grey-text text-darken-1" id="temp-unit"></sup></h3>
                         </div>
                         <div class="section footer">
                             <span class="activator"><i class="material-icons right">more_vert</i></span>
@@ -41,11 +41,11 @@
                         <span class="card-title">Temperature unit<span><i class="material-icons right">close</i></span></span>
                         <form class="center section" action="#">
                             <p class="center-align">
-                                <input type="radio" name="temp-form" id="celsius" />
+                                <input type="radio" name="temp-unit" value="celsius" id="celsius" />
                                 <label for="celsius">°C</label>
                             </p>
                             <p class="center-align">
-                                <input type="radio" name="temp-form" id="farenheit" />
+                                <input type="radio" name="temp-unit" value="farenheit" id="farenheit" />
                                 <label for="farenheit">°F</label>
                             </p>
                         </form>
